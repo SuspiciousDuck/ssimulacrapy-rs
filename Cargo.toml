@@ -1,0 +1,16 @@
+[package]
+name = "ssimulacrapy-rs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+blake2 = "0.10.6"
+clap = { version = "4.5.31", features = ["derive"] }
+human_bytes = "0.4.3"
+image = { version = "0.25.6", default-features = false, features = ["png"] }
+indicatif = { version = "0.17.11", features = ["improved_unicode"] }
+plotters = { version = "0.3.7", default-features = false, features = ["bitmap_backend", "area_series", "ttf"] }
+serde = { version = "1.0.218", features = ["serde_derive"] }
+serde_json = "1.0.140"
+statrs = "0.18.0"
+vapoursynth4-rs = { features = ["link-library"], git = "https://github.com/inflation/vapoursynth4-rs", rev = "e81e1ab17d8ad9625f4ee6cd309a658eeeb1b4c7" }
